@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q&A Application</title>
+</head>
+<body>
+    <form action="/analysis">
+        <label for="question">Ask a question:</label><br>
+        <input type="text" id="question" name="question"><br>
+        <input type="submit" value="Submit">        
+    </form>
+    {% if answer %}
+    <p>Asked Question: {{ question }}</p>
+    <p>Answer: {{ answer }}</p>
+    {% endif %}
+</body>
+</html>
